@@ -1,0 +1,140 @@
+section.header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+/* Mobile CSS */
+@media (min-width: 992px) {
+  .offcanvas-lg {
+    display: none !important;
+  }
+}
+
+section.header button.header__menu-button {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+}
+
+section.header .header__offcanvas .offcanvas-body {
+  padding: 0;
+}
+
+section.header .header__offcanvas .nav-item {
+  border-top: 1px solid var(--primary-color);
+}
+
+section.header .header__offcanvas .nav-item:hover {
+  background-color: var(--primary-color);
+}
+
+section.header .header__offcanvas .nav-link:hover {
+  color: #ffffff;
+}
+
+section.header .header__offcanvas .nav-item:last-child {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+section.header .header__offcanvas a.nav-link {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+section.header .header__offcanvas .offcanvas-icon {
+  width: 50px;
+  border-radius: 50%;
+  margin: auto 0;
+  margin-right: 10px;
+}
+
+section.header .header__offcanvas h5 {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* Header info */
+section.header div.header__info .navbar {
+  height: 120px;
+}
+
+section.header div.header__info a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+section.header div.header__info a:hover {
+  color: var(--primary-light-color);
+}
+
+section.header div.header__info .header__contact img {
+  margin-right: 6px;
+  margin-top: 4px;
+  width: 20px;
+  stroke: var(--primary-color);
+}
+
+section.header div.header__info .header__contact a {
+  padding-right: 14px;
+}
+
+section.header div.header__info .header__social-media a {
+  padding-right: 10px;
+}
+
+section.header div.header__info .header__social-media img {
+  width: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 6px;
+}
+
+section.header div.header__info .header__social-media img:hover {
+  opacity: 0.5;
+}
+
+section.header div.header__info .header__logo img {
+  width: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section.header div.header__info div.header__social-media button {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  width: 100px;
+}
+
+section.header div.header__info div.header__social-media button:hover {
+  background-color: var(--bs-btn-hover-bg);
+}
+
+section.header .divider {
+  border-top: 2px dashed var(--primary-color);
+  height: 1px;
+}
+
+/* Header menu */
+section.header div.header__menu a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+section.header div.header__menu a:hover {
+  color: var(--primary-light-color);
+}

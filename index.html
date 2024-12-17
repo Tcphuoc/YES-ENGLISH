@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- My Style -->
+  <link rel="stylesheet" href="../style/root.css">
+  <link rel="stylesheet" href="../style/component/header.css">
+  <link rel="stylesheet" href="../style/index.css">
+
+  <!-- My Script -->
+  <script type="module" src="./script/script.js"></script>
+  <script type="module" src="./script/index_script.js"></script>
+
+  <title>Document</title>
+</head>
+<body>
+  <header id="header"></header>
+
+  <section class="banner">
+    <img src="./image/banner.jpg" alt="banner">
+  </section>
+
+  <section class="content container">
+    <div class="row content__item content__about-us">
+      <div class="col-lg-6 col-md-7">
+        <div class="d-flex content__title">
+          <span class="title-dash"></span>
+          <h5 class="title-content">VỀ CHÚNG TÔI</h5>
+        </div>
+        <div class="about-us__title">
+          <span class="primary-color">YES ENGLISH</span>
+          <span> - TRUNG TÂM TIẾNG ANH</span>
+        </div>
+        <div id="about-us__description"></div>
+        <a href="/test.html" class="d-flex">TƯ VẤN NGAY</a>
+      </div>
+      <div class="col-lg-6 col-md-5">
+        <img src="./image/about_us.jpg" alt="image">
+      </div>
+    </div>
+
+    <div class="row content__item content__fact">
+      <div class="overlay"></div>
+      <div class="background-overlay align-text-bottom">ABOUT US</div>
+      <div class="col-lg-3 col-6 fact__item">
+        <p class="item-title">1000+</p>
+        <p>Học viên hài lòng sau khi hoàn thành các khóa học</p>
+      </div>
+      <div class="col-lg-3 col-6 fact__item">
+        <p class="item-title">90%</p>
+        <p>Đạt điểm IELTS mục tiêu</p>
+      </div>
+      <div class="col-lg-3 col-6 fact__item">
+        <p class="item-title">100%</p>
+        <p>Đội ngũ giảng viên đạt chứng chỉ quốc tế TESOL/CELTA</p>
+      </div>
+      <div class="col-lg-3 col-6 fact__item">
+        <p class="item-title">90%</p>
+        <p>học viên đạt mục tiêu IELTS 5.5 trở lên</p>
+      </div>
+    </div>
+
+    <div class="row content__item content__courses">
+      <div class="d-flex content__title">
+        <span class="title-dash"></span>
+        <h5 class="title-content">LỘ TRÌNH VÀ CÁC KHOÁ HỌC</h5>
+      </div>
+      <div class="courses__list accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              KHÓA IELTS
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>
+                <strong>IELTS Starter (1.0 - 3.0):</strong>
+                Bắt đầu từ con số 0, xây dựng nền tảng vững chắc.
+                <i>
+                  <a href="#">Xem thêm</a>
+                </i>
+              </p>
+              <p>
+                <strong>IELTS Explorer (3.0 - 4.5):</strong>
+                Khám phá kỹ năng cơ bản để tiến bộ.
+                <i>
+                  <a href="#">Xem thêm</a>
+                </i>
+              </p>
+              <p>
+                <strong>IELTS Builder (4.5 - 5.5):</strong>
+                Xây dựng kỹ năng cần thiết để bứt phá.
+                <i>
+                  <a href="#">Xem thêm</a>
+                </i>
+              </p>
+              <p>
+                <strong>IELTS Beyond (5.5 - 6.5):</strong>
+                Vượt mức cơ bản, tiến lên mục tiêu cao hơn.
+                <i>
+                  <a href="#">Xem thêm</a>
+                </i>
+              </p>
+              <p>
+                <strong>IELTS Winner (6.5 - 7.5):</strong>
+                Chạm đỉnh thành công với điểm số mơ ước.
+                <i>
+                  <a href="#">Xem thêm</a>
+                </i>
+              </p>
+              <p>
+                <strong>IELTS Champion (8.0+):</strong>
+                Vượt giới hạn, trở thành chuyên gia IELTS.
+                <i>
+                  <a href="#">Xem thêm</a>
+                </i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              KHÓA TIẾNG ANH GIAO TIẾP
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>
+                Khóa Tiếng Anh giao tiếp từ cơ bản đến nâng cao.
+                <i>
+                  <a href="#">Xem thêm</a>
+                </i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              KHÓA PHÁT ÂM
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>
+                KHÓA PHÁT AM
+                <i>
+                  <a href="#">Xem thêm</a>
+                </i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              KÈM 1:1
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>
+                KHÓA PHÁT ÂM
+                <i>
+                  <a href="#">Xem thêm</a>
+                </i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row content__item content__feedback">
+      <div class="d-flex content__title">
+        <span class="title-dash"></span>
+        <h5 class="title-content">CẢM NHẬN CỦA HỌC VIÊN</h5>
+      </div>
+      <div id="carouselFeedback" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card">
+              <div class="card-body">
+                <img src="./image/logo.jpg" alt="avatar" class="feedback-avatar">
+                <h5 class="card-title">Đăng Huy</h5>
+                <p class="card-text">Sinh viên ĐH Công Nghệ Thông Tin</p>
+                <p class="card-text">“YES ENGLISH đã giúp tôi đạt 6.0 IELTS từ con số 0!”</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card">
+              <div class="card-body">
+                <img src="./image/logo.jpg" alt="avatar" class="feedback-avatar">
+                <h5 class="card-title">Mỹ Anh</h5>
+                <p class="card-text">Chuyên viên Marketing</p>
+                <p class="card-text">“Phương pháp học thực sự khác biệt, rất hiệu quả!”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselFeedback" data-bs-slide="prev">
+          <img src="./image/icon/arrow-left.svg" alt="Previous" class="carousel-arrow">
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselFeedback" data-bs-slide="next">
+          <img src="./image/icon/arrow-right.svg" alt="Next" class="carousel-arrow">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+</body>
+</html>

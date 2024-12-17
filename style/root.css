@@ -1,0 +1,13 @@
+:root {
+  --primary-color: #023e8a;
+  --primary-light-color: #3498db;
+  --secondary-color: #fddd5b;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+.primary-color {
+  color: var(--primary-color);
+}
