@@ -1,3 +1,5 @@
+export const host = 'https://tcphuoc.github.io/YES-ENGLISH/'
+
 export const phone = '0968287691';
 export const email = 'yesenglishonline24@gmail.com';
 export const instagram_url = 'https://www.instagram.com/yes_englishonline/';
@@ -8,6 +10,7 @@ export function loadTemplate(templatePath, idContainer) {
     .then(response => response.text())
     .then(html => {
       document.getElementById(idContainer).innerHTML = html;
+      updatePageUrl();
       updatePhoneNumber();
       updatePhoneUrl();
       updateEmail();
@@ -76,4 +79,34 @@ export function updateInstagramUrl() {
   Array.from(instagramUrlElements).forEach(element => {
     element.href = instagram_url;
   })
+}
+
+export function updatePageUrl() {
+  const homePages = document.getElementsByClassName('index-url');
+  if (homePages.length > 0) {
+    Array.from(homePages).forEach(element => {
+      element.href = host;
+    })
+  }
+
+  const aboutUsPages = document.getElementsByClassName('about-us-url');
+  if (aboutUsPages.length > 0) {
+    Array.from(aboutUsPages).forEach(element => {
+      element.href = host + 'about_us';
+    })
+  }
+
+  const testPages = document.getElementsByClassName('test-url');
+  if (testPages.length > 0) {
+    Array.from(testPages).forEach(element => {
+      element.href = host + 'test';
+    })
+  }
+
+  const libraryPages = document.getElementsByClassName('library-url');
+  if (libraryPages.length > 0) {
+    Array.from(libraryPages).forEach(element => {
+      element.href = host + 'library';
+    })
+  }
 }
