@@ -1,4 +1,4 @@
-export const host = 'https://tcphuoc.github.io/YES-ENGLISH/'
+export const host = 'https://yesenglishedu.com/'
 
 export const phone = '0968287691';
 export const email = 'yesenglishonline24@gmail.com';
