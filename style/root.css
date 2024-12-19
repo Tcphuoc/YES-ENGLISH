@@ -2,6 +2,7 @@
   --primary-color: #023e8a;
   --primary-light-color: #3498db;
   --secondary-color: #fddd5b;
+  --secondary-dark-color: #fbbc05;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -9,5 +10,24 @@ h1, h2, h3, h4, h5, p {
 }
 
 .primary-color {
+  color: var(--primary-color);
+}
+
+.secondary-color {
+  color: var(--secondary-dark-color);
+}
+
+.background-content {
+  background-color: #edede9;
+}
+
+.background-register {
+  background-image: url("../image/background_register.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.content__title h1 {
+  font-weight: 700;
   color: var(--primary-color);
 }

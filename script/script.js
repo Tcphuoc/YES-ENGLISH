@@ -4,6 +4,7 @@ export const phone = '0968287691';
 export const email = 'yesenglishonline24@gmail.com';
 export const instagram_url = 'https://www.instagram.com/yes_englishonline/';
 export const facebook_url = 'https://www.facebook.com/profile.php?id=61567368914971';
+export const google_form_url = 'https://forms.gle/2FYyD4VU4n2y7RKt8';
 
 export function loadTemplate(templatePath, idContainer) {
   fetch(templatePath)
