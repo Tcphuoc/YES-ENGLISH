@@ -13,7 +13,7 @@ section.content span.title-dash {
 }
 
 section.content .title-content {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(2, 1, 1, 0.5);
   font-weight: 600;
 }
 
@@ -160,6 +160,27 @@ section.content .content__feedback .carousel-control-next {
 section.content .content__feedback .carousel-arrow {
   width: 20px;
   height: 20px;
+}
+
+/* Form register */
+section.content .form-register .form-register__title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+section.content .form-register {
+  padding: 20px 0;
+}
+
+section.content .form-register li {
+  margin: 15px;
+}
+
+section.background-register .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 /* Mobile CSS */

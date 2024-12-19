@@ -121,10 +121,6 @@ section.content .content__fact .fact__item {
 }
 
 /* Targets CSS */
-.background-content {
-  background-color: #edede9;
-}
-
 .content__targets {
   padding: 40px 0;
 }
@@ -315,6 +311,27 @@ section.content .content__fact .fact__item {
   .content__diffence .accordion-body {
     padding: 20px;
   }
+}
+
+/* Form register */
+section.content .form-register .form-register__title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+section.content .form-register {
+  padding: 20px 0;
+}
+
+section.content .form-register li {
+  margin: 15px;
+}
+
+section.background-register .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 @media (max-width: 576px) {
