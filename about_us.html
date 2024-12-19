@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,12 +17,11 @@
   <script type="module" src="./script/script.js"></script>
   <script type="module" src="./script/about_us_script.js"></script>
 
-  <title>Document</title>
+  <title>YES English</title>
+  <link rel="icon" type="image/png" href="./image/logo.png">
 </head>
 <body>
   <header id="header"></header>
-
-  <div class="divider d-none d-lg-block"></div>
 
   <section class="content container">
     <nav class="content__breadcrumb" aria-label="breadcrumb">
@@ -40,7 +38,7 @@
 
     <div class="row content__item content__about-us">
       <div class="col-lg-3 col-md-4">
-        <img src="./image/about_us.jpg" alt="image">
+        <img src="./image/about_us/about_us.jpg" alt="image">
       </div>
       <div class="col-lg-9 col-md-8">
         <div class="card about-us__content">
@@ -74,8 +72,10 @@
         <p>học viên đạt mục tiêu IELTS 5.5 trở lên</p>
       </div>
     </div>
+  </section>
 
-    <div class="content__targets">
+  <section class="content background-content">
+    <div class="content__targets container">
       <div class="row g-4">
         <div class="col-lg-3 col-6">
           <div class="card targets__item targets__item--primary">
@@ -110,9 +110,83 @@
         </div>
       </div>
     </div>
+  </section>
 
+
+  <section class="container content">
     <div class="content__slogan">
       YES ENGLISH – Nơi khơi nguồn cảm hứng học tập và giúp bạn tự tin làm chủ tiếng Anh!
+    </div>
+
+    <div class="content__diffence row align-items-center">
+      <div class="d-flex content__title">
+        <span class="title-dash"></span>
+        <h5 class="title-content">LỘ TRÌNH VÀ CÁC KHOÁ HỌC</h5>
+      </div>
+      <div class="col-lg-8">
+        <div class="accordion" id="differenceAccordion">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h5>Chương trình Hội nhập Quốc tế</h5>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#differenceAccordion">
+              <div class="accordion-body">
+                <p class="mb-0">Bứt phá rào cản ngôn ngữ, tự tin giao tiếp với người nước ngoài.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h5>Phương pháp Học từ vựng độc quyền</h5>
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#differenceAccordion">
+              <div class="accordion-body">
+                <p class="mb-0">Bí quyết học từ vựng nhanh chóng, dễ nhớ, nhớ lâu chỉ có tại YES ENGLISH.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <h5>Giảng dạy hiện đại, ứng dụng AI</h5>
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#differenceAccordion">
+              <div class="accordion-body">
+                <p class="mb-0">Trải nghiệm học tập thông minh với công nghệ AI, cá nhân hóa lộ trình học tập và theo dõi tiến độ một cách hiệu quả.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <h5>Phương pháp ghi chép khoa học</h5>
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#differenceAccordion">
+              <div class="accordion-body">
+                <p class="mb-0">Rèn luyện kỹ năng ghi chép chuyên nghiệp, hệ thống kiến thức khoa học, học tập hiệu quả, tiết kiệm thời gian.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 d-none d-lg-block">
+        <div class="difference-image">
+          <img src="./image/about_us/difference.jpg" alt="Our Difference">
+        </div>
+      </div>
     </div>
   </section>
 
