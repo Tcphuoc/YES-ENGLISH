@@ -208,3 +208,15 @@ export const PAGE_TEST__BACKGROUND_IMAGES = [
   './image/images_background/image3.jpg',
   './image/images_background/image4.jpg',
 ];
+
+// Page Library
+export const DOCUMENTS = [
+  { title: "Tài liệu học tập miễn phí", url: FACEBOOK_URL },
+  { title: "Bộ từ vựng IELTS theo chủ đề", url: FACEBOOK_URL },
+  { title: "Bài tập ngữ pháp", url: FACEBOOK_URL },
+  { title: "Sách luyện Writing band 5.5+", url: FACEBOOK_URL },
+  { title: "Hướng dẫn phát âm chuẩn theo IPA", url: FACEBOOK_URL },
+  { title: "Các video bài giảng từ chuyên gia luyện thi IELTS", url: FACEBOOK_URL },
+  { title: "Hướng dẫn cách phát triển ý tưởng cho Writing Task 2", url: FACEBOOK_URL },
+  { title: "Bài mẫu Speaking band 6.5 kèm phân tích", url: FACEBOOK_URL }
+];

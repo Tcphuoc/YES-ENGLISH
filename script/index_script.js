@@ -17,7 +17,7 @@ function createCourseInfo(groupCourseData) {
       <p>
         <strong>${course.name}:</strong>
         ${course.title}
-        <i><a href="${HOST}#${course.id}">Xem thêm</a></i>
+        <i><a href="${HOST}courses#${course.id}">Xem thêm</a></i>
       </p>
     `).join('');
 

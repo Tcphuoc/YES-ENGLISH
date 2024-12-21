@@ -42,6 +42,7 @@ section.content .content__test li {
 section.content .content__test button {
   background-color: var(--primary-color);
   border: none;
+  margin-bottom: 10px;
 }
 
 section.content .content__test button:hover {
