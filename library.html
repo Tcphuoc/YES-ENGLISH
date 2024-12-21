@@ -11,11 +11,11 @@
   <!-- My Style -->
   <link rel="stylesheet" href="./style/root.css">
   <link rel="stylesheet" href="./style/component/header.css">
-  <link rel="stylesheet" href="./style/index.css">
+  <link rel="stylesheet" href="./style/library.css">
 
   <!-- My Script -->
   <script type="module" src="./script/script.js"></script>
-  <script type="module" src="./script/index_script.js"></script>
+  <script type="module" src="./script/library_script.js"></script>
 
   <title>YES English</title>
   <link rel="icon" type="image/png" href="./image/logo.png">
@@ -23,6 +23,36 @@
 <body>
   <header id="header"></header>
 
+  <section class="content container">
+    <nav class="content__breadcrumb" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="index-url">Trang chủ</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Thư viện tự học</li>
+      </ol>
+    </nav>
+
+    <div class="content__item content__title">
+      <h1 class="text-center">THƯ VIỆN TỰ HỌC</h1>
+      <span class="header-dash"></span>
+    </div>
+
+    <div class="row content__item content__library">
+      
+    </div>
+  </section>
+
   <footer id="footer"></footer>
+
+  <script>
+    function scrollToElement(targetId) {
+      const element = document.getElementById(targetId);
+      const headerHeight = document.getElementsByClassName('header')[0].offsetHeight;
+      const y = element.getBoundingClientRect().top + window.scrollY - headerHeight;
+      window.scroll({
+        top: y,
+        behavior: 'smooth'
+      });
+    }
+  </script>
 </body>
 </html>

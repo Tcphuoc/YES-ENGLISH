@@ -1,9 +1,4 @@
 /* General */
-.divider {
-  border-top: 2px dashed var(--primary-color);
-  height: 1px;
-}
-
 section.content .content__item {
   margin-bottom: 20px;
 }
@@ -15,14 +10,6 @@ section.content span.title-dash {
   height: 1px;
   margin: auto 0;
   margin-right: 10px;
-}
-
-section.content span.header-dash {
-  background-color: rgba(0, 0, 0, 0.5);
-  display: block;
-  width: 100px;
-  height: 3px;
-  margin: 10px auto;
 }
 
 section.content .title-content {

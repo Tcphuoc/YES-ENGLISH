@@ -4,7 +4,7 @@ export const phone = '0968287691';
 export const email = 'yesenglishonline24@gmail.com';
 export const instagram_url = 'https://www.instagram.com/yes_englishonline/';
 export const facebook_url = 'https://www.facebook.com/profile.php?id=61567368914971';
-export const google_form_url = 'https://forms.gle/2FYyD4VU4n2y7RKt8';
+export const google_form_url = 'https://forms.gle/EMKwcSjvanphbzPa6';
 
 export function loadTemplate(templatePath, idContainer) {
   fetch(templatePath)
@@ -18,6 +18,7 @@ export function loadTemplate(templatePath, idContainer) {
       updateEmailUrl();
       updateFacebookUrl();
       updateInstagramUrl();
+      updateBtnRegister();
     })
     .catch(error => {
       console.error('Load template:', error);
@@ -97,6 +98,13 @@ export function updatePageUrl() {
     })
   }
 
+  const coursesPages = document.getElementsByClassName('courses-url');
+  if (coursesPages.length > 0) {
+    Array.from(coursesPages).forEach(element => {
+      element.href = host + 'courses';
+    })
+  }
+
   const testPages = document.getElementsByClassName('test-url');
   if (testPages.length > 0) {
     Array.from(testPages).forEach(element => {
@@ -108,6 +116,15 @@ export function updatePageUrl() {
   if (libraryPages.length > 0) {
     Array.from(libraryPages).forEach(element => {
       element.href = host + 'library';
+    })
+  }
+}
+
+export function updateBtnRegister() {
+  const btnRegister = document.getElementsByClassName('btn-register');
+  if (btnRegister.length > 0) {
+    Array.from(btnRegister).forEach(element => {
+      element.href = google_form_url;
     })
   }
 }

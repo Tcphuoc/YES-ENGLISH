@@ -1,0 +1,71 @@
+/* General */
+section.content span.title-dash {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  width: 40px;
+  height: 1px;
+  margin: auto 0;
+  margin-right: 10px;
+}
+
+section.content .title-content {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+/* Content courses CSS */
+section.content .content__courses #courses__menu {
+  position: sticky;
+  top: 180px;
+  height: calc(100vh - 180px);
+  overflow-y: auto;
+}
+
+section.content .content__courses .library__item-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+section.content .content__courses #courses__menu-content {
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+section.content .content__courses #courses__menu-content a {
+  color: var(--primary-color);
+}
+
+section.content .content__courses #courses__menu-content a:hover {
+  color: var(--secondary-dark-color);
+  text-decoration: underline;
+}
+
+/* Form register CSS */
+section.content .form-register .form-register__title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+section.content .form-register {
+  padding: 20px 0;
+}
+
+section.content .form-register li {
+  margin: 15px;
+}
+
+section.background-register .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* Mobile CSS */
+@media (max-width: 992px) {
+  section.content .content__courses #courses__menu {
+    top: 120px;
+    height: calc(100vh - 120px);
+  }
+}

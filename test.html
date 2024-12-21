@@ -12,11 +12,11 @@
   <!-- My Style -->
   <link rel="stylesheet" href="./style/root.css">
   <link rel="stylesheet" href="./style/component/header.css">
-  <link rel="stylesheet" href="./style/index.css">
+  <link rel="stylesheet" href="./style/test.css">
 
   <!-- My Script -->
   <script type="module" src="./script/script.js"></script>
-  <script type="module" src="./script/index_script.js"></script>
+  <script type="module" src="./script/test_script.js"></script>
 
   <title>YES English</title>
   <link rel="icon" type="image/png" href="./image/logo.png">
@@ -24,6 +24,97 @@
 <body>
   <header id="header"></header>
 
+  <section class="content container">
+    <nav class="content__breadcrumb" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="index-url">Trang chủ</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Kiểm tra trình độ</li>
+      </ol>
+    </nav>
+
+    <div class="content__item content__title">
+      <h1 class="text-center">KIỂM TRA TRÌNH ĐỘ</h1>
+      <span class="header-dash"></span>
+    </div>
+
+    <div class="content__item content__test row">
+      <div class="col-md-5 col-12">
+        <div class="d-flex content__title">
+          <span class="title-dash"></span>
+          <h5 class="title-content">Kiểm tra trình độ trực tiếp</h5>
+        </div>
+        <div>
+          <span class="test__title">
+            KIỂM TRA MIỄN PHÍ
+            <span class="primary-color">
+              CÙNG GIÁO VIÊN
+            </span>
+          </span>
+          <ul>
+            <li>Đánh giá 4 kỹ năng: Nghe, Nói, Đọc, Viết.</li>
+            <li>Nhận kết quả tức thì và gợi ý lộ trình học phù hợp.</li>
+          </ul>
+          <button class="btn btn-primary" onclick="scrollToElement('background-register')">
+            Đăng ký
+          </button>
+        </div>
+      </div>
+      <div class="col-md-7 col-12 background-container">
+        <div class="scroll-background"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="content background-register">
+    <div class="overlay">
+      <div class="container">
+        <div class="row form-register">
+          <div class="d-lg-none d-block col-lg-6">
+            <div class="d-flex content__title">
+              <span class="title-dash"></span>
+              <h5 class="title-content">ĐĂNG KÝ TƯ VẤN</h5>
+            </div>
+            <div>
+              <span class="form-register__title primary-color">TƯ VẤN MIỄN PHÍ TỪ CHUYÊN GIA</span>
+              <ul>
+                <li>Form đăng ký đơn giản, chỉ cần điền họ tên, email, số điện thoại.</li>
+                <li>Nhận tư vấn trực tiếp từ chuyên gia trong vòng 24 giờ.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <iframe id="form-register" width="100%" height="580" frameborder="0" marginheight="0" marginwidth="0">Đang tải…</iframe>
+          </div>
+          <div class="d-none d-lg-block col-lg-6">
+            <div class="d-flex content__title">
+              <span class="title-dash"></span>
+              <h5 class="title-content">ĐĂNG KÝ TƯ VẤN</h5>
+            </div>
+            <div>
+              <span class="form-register__title primary-color">TƯ VẤN MIỄN PHÍ TỪ CHUYÊN GIA</span>
+              <ul>
+                <li>Form đăng ký đơn giản, chỉ cần điền họ tên, email, số điện thoại.</li>
+                <li>Nhận tư vấn trực tiếp từ chuyên gia trong vòng 24 giờ.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer id="footer"></footer>
+
+  <script>
+    function scrollToElement(targetClass) {
+      const element = document.getElementsByClassName(targetClass)[0];
+      const headerHeight = document.getElementsByClassName('header')[0].offsetHeight;
+      const y = element.getBoundingClientRect().top + window.scrollY - headerHeight;
+      window.scroll({
+        top: y,
+        behavior: 'smooth'
+      });
+    }
+  </script>
 </body>
 </html>

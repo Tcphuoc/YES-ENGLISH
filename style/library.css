@@ -1,0 +1,30 @@
+/* General */
+section.content span.title-dash {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  width: 40px;
+  height: 1px;
+  margin: auto 0;
+  margin-right: 10px;
+}
+
+section.content .title-content {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+/* Content library CSS */
+section.content .library__menu {
+  position: sticky;
+  top: 180px;
+  height: calc(100vh - 180px);
+  overflow-y: auto;
+}
+
+/* Mobile CSS */
+@media (max-width: 992px) {
+  section.content .library__menu {
+    top: 120px;
+    height: calc(100vh - 120px);
+  }
+}
