@@ -1,25 +1,19 @@
-import { loadTemplate, google_form_url } from './script.js';
-
-const IMAGES = [
-  './image/images_background/image1.jpg',
-  './image/images_background/image2.jpg',
-  './image/images_background/image3.jpg',
-  './image/images_background/image4.jpg',
-]
+import { loadTemplate } from './script.js';
+import { PAGE_TEST__BACKGROUND_IMAGES, GOOGLE_FORM_URL } from './constant.js';
 
 function loadImages() {
   const container = document.getElementsByClassName('scroll-background')[0];
   if (!container) return;
 
   // Add image to container
-  IMAGES.forEach(imagePath => {
+  PAGE_TEST__BACKGROUND_IMAGES.forEach(imagePath => {
     const img = document.createElement('img');
     img.src = imagePath;
     container.appendChild(img);
   });
 
   // Add image again to container to create effect
-  IMAGES.forEach(imagePath => {
+  PAGE_TEST__BACKGROUND_IMAGES.forEach(imagePath => {
     const img = document.createElement('img');
     img.src = imagePath;
     container.appendChild(img);
@@ -29,7 +23,7 @@ function loadImages() {
 function init() {
   const googleFormIframe = document.getElementById('form-register');
   if (googleFormIframe) {
-    googleFormIframe.src = google_form_url;
+    googleFormIframe.src = GOOGLE_FORM_URL;
   }
 
   loadImages();

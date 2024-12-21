@@ -35,11 +35,15 @@
       <h1 class="text-center">KHÓA HỌC</h1>
       <span class="header-dash"></span>
     </div>
+  </section>
 
-    <div class="row content__courses">
-      <div id="courses__container" class="col-9"></div>
-      <div id="courses__menu" class="col-3">
-        <div id="courses__menu-content"></div>
+  <section class="content background-content">
+    <div class="container">
+      <div class="row content__courses">
+        <div id="courses__container" class="col-lg-9 col-md-8 col-12"></div>
+        <div id="courses__menu" class="col-lg-3 col-md-4 d-md-block d-none">
+          <div id="courses__menu-content"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -75,12 +79,23 @@
     function scrollToElement(targetId) {
       const element = document.getElementById(targetId);
       const headerHeight = document.getElementsByClassName('header')[0].offsetHeight;
+      console.log(headerHeight);
       const y = element.getBoundingClientRect().top + window.scrollY - headerHeight - 10;
       window.scroll({
         top: y,
         behavior: 'smooth'
       });
     }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash;
+      if (hash) {
+        setTimeout(() => {
+          const targetScroll = hash.substring(1);
+          scrollToElement(targetScroll);
+        }, 1000);
+      }
+    });
   </script>
 </body>
 </html>

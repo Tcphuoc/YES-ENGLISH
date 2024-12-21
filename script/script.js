@@ -1,10 +1,4 @@
-export const host = 'https://yesenglishedu.com/'
-
-export const phone = '0968287691';
-export const email = 'yesenglishonline24@gmail.com';
-export const instagram_url = 'https://www.instagram.com/yes_englishonline/';
-export const facebook_url = 'https://www.facebook.com/profile.php?id=61567368914971';
-export const google_form_url = 'https://forms.gle/EMKwcSjvanphbzPa6';
+import { HOST, PHONE, EMAIL, INSTAGRAM_URL, FACEBOOK_URL, GOOGLE_FORM_URL } from './constant.js';
 
 export function loadTemplate(templatePath, idContainer) {
   fetch(templatePath)
@@ -34,7 +28,7 @@ export function updatePhoneNumber() {
   if (phoneElements.length === 0) return;
 
   Array.from(phoneElements).forEach(element => {
-    element.textContent = formatPhoneNumber(phone);
+    element.textContent = formatPhoneNumber(PHONE);
   });
 }
 
@@ -43,7 +37,7 @@ export function updatePhoneUrl() {
   if (phoneUrlElements.length === 0) return;
 
   Array.from(phoneUrlElements).forEach(element => {
-    element.href = 'tel:' + phone;
+    element.href = 'tel:' + PHONE;
   })
 }
 
@@ -52,7 +46,7 @@ export function updateEmail() {
   if (emailElements.length === 0) return;
 
   Array.from(emailElements).forEach(element => {
-    element.textContent = email;
+    element.textContent = EMAIL;
   });
 }
 
@@ -61,7 +55,7 @@ export function updateEmailUrl() {
   if (emailUrlElements.length === 0) return;
 
   Array.from(emailUrlElements).forEach(element => {
-    element.href = 'mailto:' + email;
+    element.href = 'mailto:' + EMAIL;
   })
 }
 
@@ -70,7 +64,7 @@ export function updateFacebookUrl() {
   if (facebookUrlElements.length === 0) return;
 
   Array.from(facebookUrlElements).forEach(element => {
-    element.href = facebook_url;
+    element.href = FACEBOOK_URL;
   })
 }
 
@@ -79,7 +73,7 @@ export function updateInstagramUrl() {
   if (instagramUrlElements.length === 0) return;
 
   Array.from(instagramUrlElements).forEach(element => {
-    element.href = instagram_url;
+    element.href = INSTAGRAM_URL;
   })
 }
 
@@ -87,35 +81,35 @@ export function updatePageUrl() {
   const homePages = document.getElementsByClassName('index-url');
   if (homePages.length > 0) {
     Array.from(homePages).forEach(element => {
-      element.href = host;
+      element.href = HOST;
     })
   }
 
   const aboutUsPages = document.getElementsByClassName('about-us-url');
   if (aboutUsPages.length > 0) {
     Array.from(aboutUsPages).forEach(element => {
-      element.href = host + 'about_us';
+      element.href = HOST + 'about_us';
     })
   }
 
   const coursesPages = document.getElementsByClassName('courses-url');
   if (coursesPages.length > 0) {
     Array.from(coursesPages).forEach(element => {
-      element.href = host + 'courses';
+      element.href = HOST + 'courses';
     })
   }
 
   const testPages = document.getElementsByClassName('test-url');
   if (testPages.length > 0) {
     Array.from(testPages).forEach(element => {
-      element.href = host + 'test';
+      element.href = HOST + 'test';
     })
   }
 
   const libraryPages = document.getElementsByClassName('library-url');
   if (libraryPages.length > 0) {
     Array.from(libraryPages).forEach(element => {
-      element.href = host + 'library';
+      element.href = HOST + 'library';
     })
   }
 }
@@ -124,7 +118,7 @@ export function updateBtnRegister() {
   const btnRegister = document.getElementsByClassName('btn-register');
   if (btnRegister.length > 0) {
     Array.from(btnRegister).forEach(element => {
-      element.href = google_form_url;
+      element.href = GOOGLE_FORM_URL;
     })
   }
 }

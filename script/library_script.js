@@ -1,9 +1,10 @@
-import { loadTemplate, google_form_url } from './script.js';
+import { loadTemplate } from './script.js';
+import { GOOGLE_FORM_URL } from './constant.js';
 
 function init() {
   const googleFormIframe = document.getElementById('form-register');
   if (googleFormIframe) {
-    googleFormIframe.src = google_form_url;
+    googleFormIframe.src = GOOGLE_FORM_URL;
   }
 }
 
