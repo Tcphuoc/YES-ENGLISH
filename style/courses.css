@@ -1,0 +1,92 @@
+/* General */
+section.content span.title-dash {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  width: 40px;
+  height: 1px;
+  margin: auto 0;
+  margin-right: 10px;
+}
+
+section.content .title-content {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+/* Breadcrumb CSS */
+section.content .content__breadcrumb {
+  --breadcrumb-divider: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8'><path d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='#{$breadcrumb-divider-color}'/></svg>");
+  margin-top: 10px;
+}
+
+section.content .content__breadcrumb .breadcrumb-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* Content courses CSS */
+section.content .content__courses {
+  padding: 20px 0;
+}
+
+section.content .content__courses #courses__menu {
+  position: sticky;
+  top: 180px;
+  height: calc(100vh - 180px);
+  overflow-y: auto;
+}
+
+section.content .content__courses .library__item-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+section.content .content__courses #courses__menu-content,
+section.content .content__courses #courses__container {
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+section.content .content__courses #courses__container {
+  padding: 40px;
+}
+
+section.content .content__courses #courses__menu-content a {
+  color: var(--primary-color);
+}
+
+section.content .content__courses #courses__menu-content a:hover {
+  color: var(--secondary-dark-color);
+  text-decoration: underline;
+}
+
+/* Form register CSS */
+section.content .form-register .form-register__title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+section.content .form-register {
+  padding: 20px 0;
+}
+
+section.content .form-register li {
+  margin: 15px;
+}
+
+section.background-register .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+/* Mobile CSS */
+@media (max-width: 992px) {
+  section.content .content__courses #courses__menu {
+    top: 120px;
+    height: calc(100vh - 120px);
+  }
+}
